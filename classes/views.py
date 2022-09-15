@@ -31,4 +31,4 @@ class AdminCreateTimeTable(APIView):
     def post(self, request):
         serializer = TimeTableSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        return Response({'msg': TIMETABLE_REGISTER_SUCCESS_MESSAGE}, status=TIMETABLE_REGISTER_SUCCESS_STATUS)
+        # this is my code
